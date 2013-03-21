@@ -1,0 +1,4 @@
+class Delete
+	constructor:()->
+
+	

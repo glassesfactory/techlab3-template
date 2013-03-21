@@ -1,0 +1,24 @@
+!!!5
+html
+  head
+    block head
+      title
+        block title
+          |&nbsp; tech lab 3
+      link(href="/assets/css/bootstrap.min.css", rel="stylesheet", type="text/css")
+      link(href="/assets/css/main.css", rel="stylesheet", type="text/css")
+      style(type="text/css")
+        body{padding-top:60px;}
+  body
+    #global
+      div.navbar.navbar-inverse.navbar-fixed-top
+        div.navbar-inner
+          div.container-fluid
+            a(href="/").brand tech lab 3
+            div.pull-right: ul.nav: li: a(href="/new").new NEW
+      #container.container
+        block main
+      footer &copy; Copyright hageee.net All rights reserved.
+      
+    block script
+      script(type="text/javascript", src="/assets/js/components/requirejs/require.js", data-main="/assets/js/main")

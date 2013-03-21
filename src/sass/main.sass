@@ -1,0 +1,185 @@
+$borderColor: #e7e7e7
+html
+  height: 100%
+body
+  height: 100%
+  color : #333333
+
+body
+  padding-bottom: -60px
+
+#global > footer
+  font-size: 10px
+  line-height: 60px
+  text-align : center
+  height : 60px
+  background: #f2f2f2
+  text-shadow: 1px 1px 1px rgba(255,255,255,1)
+  width: 100%
+  position: absolute
+  bottom : 0
+  // position : absolute
+  // bottom : 0
+
+#global
+  position: relative
+  height: auto !important
+  height : 100%
+  min-height: 100%
+
+#container
+  padding-bottom: 60px
+
+#main
+  width: 500px
+  border : 1px solid $borderColor
+  border-radius: 4px
+  margin-bottom: 20px
+  box-shadow: 1px 1px 4px 2px rgba(200,200,200,0.3)
+  background: #ffffff
+  z-index: 1000
+  position : absolute
+
+  article
+    cursor: pointer
+    padding: 10px
+    border-bottom: 1px solid $borderColor
+
+    .icon, .tweet
+      float: left
+    .icon
+      width: 50px
+    .tweet
+      width: 420px
+      margin-left: 10px
+      header
+        font-weight: bold
+      footer
+        width: 100%
+        text-align: right
+        font-size: 12px
+        color : #999999
+  article:after
+    content: ''
+    clear : both
+    display : table
+  article:last-child
+    border-bottom : none
+
+.detail
+  background: #f9f9f9
+  width: 410px
+  border : 1px solid $borderColor
+  padding: 10px
+  border-radius: 4px
+  margin-top : 10px
+  margin-bottom: 20px
+  box-shadow: 1px 1px 4px 2px rgba(200,200,200,0.3)
+  position : fixed
+  z-index: 1
+  header
+    .icon, .name
+      float: left
+    .name
+      margin-left: 10px
+      font-weight: bold
+    .close
+      position : absolute
+      top : 10px
+      right: 10px
+  .tweet
+    margin-top: 15px
+    font-size: 18px
+  footer
+    width: 100%
+    font-size: 12px
+    color: #999999
+    text-align: right
+  header:after
+    content: ''
+    clear: both
+    display: table
+
+#newContainer
+  width : 400px
+  height: 180px
+  background : #ffffff
+  border-radius : 5px
+  position : absolute
+  padding : 15px
+  z-index: 9999
+  left : 50%
+  top : 100px
+  box-shadow : 1px 1px 8px 4px rgba(50, 50, 50, 0.8)
+  textarea
+    width : 385px
+    height : 60px
+  header
+    position : relative
+    width : auto
+    .close
+      position: absolute
+      top : -15px
+      right : 0
+
+#screen
+  z-index: 9998
+  background: rgba(0, 0, 0, 0.7)
+  width: 100%
+  height: 100%
+  position: fixed
+  top: 0
+  left: 0
+
+.nullpo
+  height: 60px
+  line-height: 60px
+  font-size: 60px
+  font-weight: bold
+  text-align: center
+
+.edit
+  display: inline-block
+  margin-right: 5px
+
+.delete
+  display: inline-block
+  margin-right: 5px
+  color : #cc0000
+
+#editView
+  margin: 15px 0 0
+  input[type=text]
+    width: 320px
+    margin-bottom: 0
+  .btn-mini
+    width: 30px
+    height: 30px
+    margin-left: 5px 
+
+.modalAlert
+  position: absolute
+  z-index: 9999
+  top : 100px
+  width: 350px
+  left: 50%
+  background: #fff
+  box-shadow : 1px 1px 8px 4px rgba(50, 50, 50, 0.8)
+  border-radius: 5px
+  .msg
+    font-size: 20px
+    font-weight: bold
+    padding: 10px 10px 15px
+    border-bottom: 1px solid #ccc
+  .action
+    border-top: 1px solid #fff
+    border-radius: 0 0 5px 5px
+    background: #f2f2f2
+    padding: 5px
+    text-align: center
+    .btn
+      margin-right: 5px
+
+
+.delete:hover
+  color: #cc0000
